@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --clr-black: black;
+    --clr-white: white;
+    --clr-accent: #E7FE6F;
+
+    --fs-small: 1rem;
+    --fs-large: 8rem;
 }
