@@ -37,10 +37,6 @@ html {
   padding: 1rem;
 }
 
-/* body {
-  padding-top: 70px;
-} */
-
 .navbar .nav-links {
   display: flex;
   gap: 1rem;

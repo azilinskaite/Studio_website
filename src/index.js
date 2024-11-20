@@ -1,8 +1,10 @@
 import "./reset.css";
 import "./style.css";
+import "./home-styles.css";
+import "./team-styles.css";
+import "./our_projects.css";
 import "./projects-style.css";
-
-
+import "./contact.css";
 
 // CAROUSEL
 let slideIndex = 0;
