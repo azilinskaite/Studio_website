@@ -25,6 +25,7 @@
 
 #team-title {
     font-size: var(--fs-large);
+    
 }
 
 .team-content {
@@ -37,11 +38,13 @@
 .profile-pic {
     width: clamp(100px, 100%, 250px);
     filter: grayscale(100%);
+    transition: filter 0.9s ease, transform 0.9s ease;
 }
 
 .profile-pic:hover {
     filter: grayscale(0%);
     transform: scale(1.1);
+    transition: filter 0.9s ease, transform 0.9s ease;
 
 }
 
