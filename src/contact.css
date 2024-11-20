@@ -21,27 +21,25 @@ body {
 
 .contact_page {
     padding: 5rem;
-    position: relative;
 }
 
-.contact  {
-    /* margin: 0 auto; */
-    text-align: left; 
-    font-size: var(--fs-large);
-    letter-spacing: 0.125rem; 
-    position: relative;
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
 }
 
-h2 {
+#contact_text {
     font-size: var(--fs-large); 
-    /* letter-spacing: 0.125rem;  */
-    color: var(--clr-white); 
+    letter-spacing: 0.125rem;
+    display: flex;
+    align-items: flex-end;
 }
 
 .contact-logo {
-    width: auto;
     height: 8rem;
-    margin-bottom: 2rem;
+    width: auto;
+    margin: 0 0.5rem;
 }
 
 .contact_details {
