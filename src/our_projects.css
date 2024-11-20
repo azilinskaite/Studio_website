@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --clr-black: black;
+    --clr-white: white;
+    --clr-accent: #E7FE6F;
+
+    --fs-small: 1rem;
+    --fs-large: 8rem;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+.our_projects_section {
+    padding: 5rem;
+    position: relative;
+}
+
+.project_intro {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: var(--fs-large); 
+    letter-spacing: 0.125rem; 
+    color: var(--clr-white); 
+}
+
+.ellipse {
+    position: absolute;
+    border-radius: 50%;
+}
+
+#grey-ellipse {
+        background-color: #D9D9D9;
+        width: 19.375rem; 
+        height: 17.8125rem; 
+        bottom: 15rem; 
+        right: 5rem;
+        z-index: 1; 
+    }
+
+#lime-ellipse {
+    background-color: #E7FE6F;
+    width: 8.8125rem; 
+    height: 8.8125rem; 
+    bottom: 6.25rem; 
+    top: 15rem; 
+    right: 20rem; 
+    z-index: 2;
+}
