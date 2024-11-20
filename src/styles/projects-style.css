@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+:root {
+  --clr-black: black;
+  --clr-white: white;
+  --clr-accent: #e7fe6f;
+  --fs-small: 1rem;
+  --fs-large: 8rem;
+}
+
+#projects {
+  padding: 5rem 9rem;
+}
+
+.projects-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid var(--clr-black);
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  border-radius: 1.5rem;
+}
+img.displaySlide {
+  display: block;
+  animation: fadeAnimation 1s ease-in-out;
+}
+
+.projects-info {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  .project-details {
+    .project-author, .project-tech {
+        font-weight: 200;
+    }
+  }
+  .navigation-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    .indicator {
+      height: 0.7rem;
+      width: 0.7rem;
+      border: 1px solid var(--clr-white);
+      border-radius: 50%;
+    }
+    .indicator.active {
+      background-color: var(--clr-white);
+    }
+  }
+  .project-button {
+    button {
+        float: right;
+      font-size: var(--fs-small);
+      font-weight: 200;
+      color: white;
+      background-color: transparent;
+      border: 1px solid var(--clr-white);
+      padding: 0.2rem 0.8rem;
+      border-radius: 1rem;
+      &:hover {
+        background-color: var(--clr-white);
+        color: var(--clr-black);
+      }
+    }
+  }
+}
+
+@keyframes fadeAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
