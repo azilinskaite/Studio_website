@@ -2,21 +2,20 @@ import "./reset.css";
 import "./style.css";
 import "./projects-style.css";
 
-// CAROUSEL
 
+
+// CAROUSEL
 let slideIndex = 0;
 let intervalId = null;
 const slides = document.querySelectorAll(".slides img");
 const indicators = document.querySelectorAll(".navigation-indicators .indicator");
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide);
 
-// ADD EVENT LISTENERS TO ARROW BUTTONS!
-
-// create slider when DOM is loaded
 document.addEventListener("DOMContentLoaded", createSlider);
 
-// if slides exist, display slides
 function createSlider() {
     if(slides.length > 0) {
     slides[slideIndex].classList.add("displaySlide");
@@ -27,7 +26,6 @@ function createSlider() {
     }
 }
 
-// start showing slides from index 0
 function showSlide(index) {
     slideIndex = index;
     if(index >= slides.length){
@@ -45,7 +43,6 @@ function showSlide(index) {
     intervalId = setInterval(nextSlide, 5000);
 }
 
-// toggle indicator class depending on slide index
 function updateNavIndicator() {
     indicators.forEach((indicator, index) => {
         indicator.classList.toggle("active", index === slideIndex);
@@ -71,8 +68,7 @@ indicators.forEach((indicator, index) => {
     });
 });
 
-// CONSTRUCTOR CLASS FOR PROJECT DETAILS
-
+// CONSTRUCTOR CLASS FOR PROJECTS
 class Project {
     constructor(title, author, technologies) {
       this.title = title;
@@ -114,7 +110,7 @@ class Project {
 
   function updateProjectDetails(index) {
     const projectDiv = document.querySelector(".project-details");
-    projectDiv.innerHTML = ''; // Clear existing content
+    projectDiv.innerHTML = "";
   
     const { title, author, technologies } = projectDetails[index];
     const project = new Project(title, author, technologies);
