@@ -4,10 +4,14 @@ import "./projects-style.css";
 
 // CAROUSEL
 
-const slides = document.querySelectorAll(".slides img");
-const indicators = document.querySelectorAll(".navigation-indicators .indicator")
 let slideIndex = 0;
 let intervalId = null;
+const slides = document.querySelectorAll(".slides img");
+const indicators = document.querySelectorAll(".navigation-indicators .indicator");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
+
+// ADD EVENT LISTENERS TO ARROW BUTTONS!
 
 // create slider when DOM is loaded
 document.addEventListener("DOMContentLoaded", createSlider);
@@ -132,3 +136,4 @@ class Project {
     const projectButton = document.querySelector('.project-button');
     projectButton.href = buttonLinks[index];
   }
+
