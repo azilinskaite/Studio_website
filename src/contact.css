@@ -1,63 +1,70 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
 }
 
 :root {
-  --clr-black: black;
-  --clr-white: white;
-  --clr-accent: #e7fe6f;
-  --fs-small: 1rem;
-  --fs-large: 8rem;
+    --clr-black: black;
+    --clr-white: white;
+    --clr-accent: #E7FE6F;
+
+    --fs-small: 1rem;
+    --fs-large: 8rem;
 }
 
 body {
-  font-family: "Lexend", sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 
 .contact_page {
-  padding: 5rem;
+    padding: 5rem;
 }
 
-.contact {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1.5rem;
+.contact  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
 }
 
 #contact_text {
-  font-size: var(--fs-large);
-  letter-spacing: 0.125rem;
-  display: flex;
-  align-items: flex-end;
+    font-size: var(--fs-large); 
+    letter-spacing: 0.125rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+#logo {
+    width: auto;
+    height: 8rem;
+    transition: transform 0.3s ease;
 }
 
 .contact-logo {
-  height: 8rem;
-  width: auto;
-  margin: 0 0.5rem;
+    height: 8rem;
+    width: auto;
+    margin: 0 0.5rem;
 }
 
 .contact_details {
-  margin-top: 18rem;
+        margin-top: 20rem;
 }
 
 #address {
-  font-size: var(--fs-small);
-  color: white;
-  margin: 0.625rem 0;
+    font-size: var(--fs-small); 
+    color: white; 
+    margin: 0.625rem 0;
 }
 
 #email {
-  font-size: var(--fs-small);
-  font-weight: 200;
-  color: white;
-  padding: 0.3125rem 0.625rem;
-  margin: 0.625rem 0;
-  border: 0.0625rem solid var(--clr-white);
-  border-radius: 1rem;
-  display: inline-block;
+    font-size: var(--fs-small);
+    font-weight: 200;
+    color: white;
+    padding: 0.3125rem 0.625rem; 
+    margin: 0.625rem 0; 
+    border: 0.0625rem solid var(--clr-white); 
+    border-radius: 1rem;
+    display: inline-block;
 }

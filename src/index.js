@@ -135,3 +135,28 @@ class Project {
     projectButton.href = buttonLinks[index];
   }
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const logo = document.getElementById('logo');
+    
+    if (logo) {
+        console.log('Logo found');
+        let direction = 1;
+        let position = 0;
+
+        function animateLogo() {
+            position += direction * 0.75;
+            logo.style.transform = `translateY(${position}px)`;
+            
+            if (position >= 15 || position <= -15) { 
+                direction *= -1;
+            }
+            
+            requestAnimationFrame(animateLogo);
+        }
+
+        animateLogo();
+    } else {
+        console.log('Logo not found');
+    }
+});
+
