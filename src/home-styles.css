@@ -110,8 +110,8 @@ h2 {
   font-size: var(--fs-large);
   top: 1.5rem;
   text-align: left;
-
   line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .home-h1 {
@@ -193,7 +193,7 @@ h2 {
 }
 
 .home-est {
-  margin: 6.25rem;
+  margin: 6.5rem 0rem;
 }
 
 .home-moto {
@@ -216,7 +216,7 @@ h2 {
 
 .home-second-box {
   position: relative;
-  margin-top: 9.5rem;
+  margin-top: 14rem;
 }
 
 .home-language {
