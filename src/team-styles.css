@@ -1,96 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lexend", sans-serif;
-    background-color: var(--clr-black);
-    color: var(--clr-white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
 }
 
 :root {
-    --clr-black: black;
-    --clr-white: white;
-    --clr-accent: #E7FE6F;
+  --clr-black: black;
+  --clr-white: white;
+  --clr-accent: #e7fe6f;
 
-    --fs-small: 1rem;
-    --fs-large: 8rem;
+  --fs-small: 1rem;
+  --fs-large: 8rem;
 }
 
 .team-section {
-    padding: 5rem;
-    margin-top: 5rem;
+  padding: 5rem;
+  /* margin-top: 5rem; */
 }
 
-
 #team-title {
-    font-size: var(--fs-large);
-
+  font-size: var(--fs-large);
 }
 
 .team-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 0.3rem;
-    margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 0.3rem;
+  margin-top: 3rem;
 }
 
 .team-profile {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-pic {
-    width: clamp(100px, 100%, 250px);
-    filter: grayscale(100%);
-    transition: filter 0.9s ease, transform 0.9s ease;
+  width: clamp(100px, 100%, 250px);
+  filter: grayscale(100%);
+  transition: filter 0.9s ease, transform 0.9s ease;
 }
 
 .profile-pic:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-    transition: filter 0.9s ease, transform 0.9s ease;
-
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  transition: filter 0.9s ease, transform 0.9s ease;
 }
 
 .profile-text {
-    text-align: center;
-    margin-top: 1.2rem;
+  text-align: center;
+  margin-top: 1.2rem;
 }
 
 .profile-text h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .profile-text h4 {
-    margin-top: 0.5rem;    
+  margin-top: 0.2rem;
 }
 
-
-.profile-text p {
-    font-weight: 200;
+.profile-descr {
+  font-weight: 200;
+  margin-bottom: 1rem;
 }
-
 
 .profile-text span {
-    margin: 0.2rem;
-    font-size: var(--fs-small);
-      font-weight: 200;
-      color: white;
-      background-color: transparent;
-      border: 1px solid var(--clr-white);
-      padding: 0.2rem 0.8rem;
-      border-radius: 1rem;
-      &:hover {
-        background-color: var(--clr-white);
-        color: var(--clr-black);
-      }
+  font-size: var(--fs-small);
+  font-weight: 200;
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--clr-white);
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+  &:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+  }
 }
 
 .profile-text a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
