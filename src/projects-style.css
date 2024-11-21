@@ -7,6 +7,7 @@
   overflow: hidden;
   border-radius: 1.5rem;
   border: 1px solid var(--clr-black);
+  aspect-ratio: 16 / 8;
   button {
     position: absolute;
     top: 50%;
@@ -24,9 +25,10 @@
     right: 0;
   }
 }
-
 .slides img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: none;
   border-radius: 1.5rem;
 }
@@ -84,4 +86,65 @@ img.displaySlide {
   to {
     transform: translateX(0%);
   }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  #projects {
+    padding: 4rem 2rem;
+  }
+  .projects-slider {
+    aspect-ratio: 3 / 2;
+  }
+  .slides img {
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .projects-info {
+    padding: 0 1rem;
+    .project-details {
+      margin-top: 4rem;
+    }
+      .indicator {
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+    .project-button {
+      button {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    padding: 3rem 1rem;
+  }
+  .projects-slider {
+    aspect-ratio: 1 / 1;
+  }
+  .slides img {
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .projects-info {
+    padding: 0 1rem;
+    .project-details {
+      margin-top: 4rem;
+    }
+    .indicator {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+    }
+    .project-button {
+      button {
+        margin-top: 4rem;
+      }
+    }
 }

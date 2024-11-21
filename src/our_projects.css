@@ -1,76 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
-    color: white;
+.our_projects_section {
+  padding: 5rem;
+  position: relative;
+}
+
+.project_intro {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+h2 {
+  font-size: var(--fs-large);
+  letter-spacing: 0.125rem;
+  color: var(--clr-white);
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  
-  :root {
-    --clr-black: black;
-    --clr-white: white;
-    --clr-accent: #e7fe6f;
-  
-    --fs-small: 1rem;
-    --fs-large: 8rem;
+  50% {
+    transform: translateY(-50px);
   }
-  
-  body {
-    font-family: "Lexend", sans-serif;
-  }
-  
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  margin-bottom: 6rem;
+}
+
+#grey-ellipse {
+  background-color: #d9d9d9;
+  width: 19.375rem;
+  height: 17.8125rem;
+  bottom: 15rem;
+  right: 5rem;
+  z-index: 1;
+  animation: jump 2.3s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+#lime-ellipse {
+  background-color: #e7fe6f;
+  width: 8.8125rem;
+  height: 8.8125rem;
+  bottom: 6.25rem;
+  right: 20rem;
+  z-index: 2;
+  animation: jump 1.8s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .our_projects_section {
-    padding: 5rem;
-    position: relative;
+    padding: 4rem;
   }
-  
-  .project_intro {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  
   h2 {
-    font-size: var(--fs-large);
-    letter-spacing: 0.125rem;
-    color: var(--clr-white);
+    font-size: 6rem;
   }
-  
-  @keyframes jump {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-50px); 
-    }
-  }
-  
   .ellipse {
-    position: absolute;
-    border-radius: 50%;
-    margin-bottom: 6rem;
+    margin-bottom: -1rem;
   }
-  
-  #grey-ellipse {
-    background-color: #d9d9d9;
-    width: 19.375rem;
-    height: 17.8125rem;
-    bottom: 15rem;
-    right: 5rem;
-    z-index: 1;
-    animation: jump 2.3s ease-in-out infinite;
-    animation-delay: 0.7s;
+}
+
+@media only screen and (max-width: 600px) {
+  .our_projects_section {
+    padding: 3rem;
   }
-  
-  #lime-ellipse {
-    background-color: #e7fe6f;
-    width: 8.8125rem;
-    height: 8.8125rem;
-    bottom: 6.25rem;
-    right: 20rem;
-    z-index: 2;
-    animation: jump 1.8s ease-in-out infinite;
-    animation-delay: 0.2s;
+  h2 {
+    font-size: 4rem;
   }
+  .ellipse {
+    margin-bottom: 1.5rem;
+  }
+}
