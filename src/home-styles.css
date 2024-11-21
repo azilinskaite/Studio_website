@@ -1,4 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+:root {
+  --clr-black: black;
+  --clr-white: white;
+  --clr-accent: #e7fe6f;
+  --fs-small: 1rem;
+  --fs-large: 8rem;
+}
 body,
 html {
   font-family: "Lexend", sans-serif;
@@ -58,13 +74,13 @@ html {
 .home-circle {
   position: absolute;
   top: 9rem;
-  left: 75%;
+  left: 70%;
   transform: translateX(-50%);
   width: 7.5rem;
   height: 7.5rem;
   background-color: var(--clr-accent);
   border-radius: 50%;
-  z-index: 3;
+  z-index: 999;
   transition: background-color 0.5s ease, transform 0.3s ease;
 }
 .home-circle:hover {
@@ -94,8 +110,8 @@ h2 {
   font-size: var(--fs-large);
   top: 1.5rem;
   text-align: left;
+
   line-height: 1.2;
-  margin-bottom: 1.5rem;
 }
 
 .home-h1 {
@@ -105,7 +121,60 @@ h2 {
   line-height: 1.2;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 1s steps(22), blink 0.2s step-end infinite alternate;
+  animation: typing 5s steps(200), blink 2s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.curated-yellow {
+  color: var(--clr-accent);
+  font-size: var(--fs-large);
+  top: 1.5rem;
+  text-align: left;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: 5s typing 1.5s steps(200), blink 2s step-end infinite alternate;
+  /* animation-duration: 5s; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+._websites {
+  font-size: var(--fs-large);
+  top: 1.5rem;
+  text-align: left;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 5s typing 3s steps(200), blink 2s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -124,7 +193,7 @@ h2 {
 }
 
 .home-est {
-  margin: 6.5rem 0rem;
+  margin: 6.25rem;
 }
 
 .home-moto {
@@ -147,7 +216,7 @@ h2 {
 
 .home-second-box {
   position: relative;
-  margin-top: 15rem;
+  margin-top: 9.5rem;
 }
 
 .home-language {
@@ -160,67 +229,3 @@ h2 {
   gap: 1rem;
   font-weight: 200;
 }
-
-@media screen and (max-width: 600px) {
-  .home-container {
-    padding: 7rem 3rem 3rem;
-  }
-  .navbar {
-    left: 3rem;
-    right: 3rem;
-  }
-  .home-h1 {
-    font-size: 4rem;
-  }
-  .home-circle {
-    top: 11rem;
-    width: 5rem;
-    height: 5rem;
-  }
-  .home-h2 {
-    font-size: 4rem;
-  }
-  .home-second-box {
-    margin-top: 9rem;
-  }
-  .home-moto {
-    left: 2rem;
-  }
-  .home-language {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 600px) {
-  .home-container {
-    padding: 6rem 4rem 4rem;
-  }
-  .navbar {
-    left: 4rem;
-    right: 4rem;
-  }
-  .home-h1 {
-    font-size: 5.5rem;
-  }
-  .home-circle {
-    top: 12rem;
-    left: 85%;
-    height: 6.5rem;
-    width: 6.5rem;
-  }
-  .home-h2 {
-    font-size: 5.5rem;
-  }
-  .home-second-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 9rem;
-  }
-  .home-language {
-    display: none;
-  }
-
-}
-
