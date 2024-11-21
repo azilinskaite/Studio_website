@@ -1,20 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
-}
-
-:root {
-  --clr-black: black;
-  --clr-white: white;
-  --clr-accent: #e7fe6f;
-  --fs-small: 1rem;
-  --fs-large: 8rem;
-}
 body,
 html {
   font-family: "Lexend", sans-serif;
@@ -110,8 +94,8 @@ h2 {
   font-size: var(--fs-large);
   top: 1.5rem;
   text-align: left;
-
   line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .home-h1 {
