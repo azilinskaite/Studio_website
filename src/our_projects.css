@@ -61,13 +61,3 @@ h2 {
   right: 20rem;
   z-index: 2;
 }
-
-/* #lime-ellipse {
-  animation: rotate1 3s linear infinite forwards;
-}
-
-@keyframes rotate1 {
-  to {
-    offset-distance: 100%;
-  }
-} */
